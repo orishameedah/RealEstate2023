@@ -30,7 +30,7 @@ const Contact = () => {
           name="hidden_iframe"
           id="hidden_iframe"
           style={{display: "none"}}
-          onLoad={()=>{if(submitted) {window.location="http://localhost:3000/"}}}
+          onLoad={()=>{if(submitted) {window.location="https://osayandeblessing.vercel.app/"}}}
       />
       <form 
       action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfyxre825ENMoSO4ac3K1tFLZKRG1WtfWvHebZPR1f9_izAWQ/formResponse"

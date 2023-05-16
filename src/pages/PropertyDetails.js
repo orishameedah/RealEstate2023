@@ -81,7 +81,7 @@ const PropertyDetails = () => {
             name="hidden_iframe"
             id="hidden_iframe"
             style={{display: "none"}}
-            onLoad={()=>{if(submitted) {window.location="http://localhost:3000/"}}}
+            onLoad={()=>{if(submitted) {window.location="https://osayandeblessing.vercel.app/"}}}
           />
             {/* Form */}
             <form className='flex flex-col gap-y-2' 
