@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const [submitted, setSubmitted] = useState(false);
+
 const Contact = () => {
   let submitted = useState(false);
   return(
@@ -25,18 +27,25 @@ const Contact = () => {
     <div class="grow-0 shrink-0 basis-auto w-full md:w-5/12 px-3 lg:px-6">
       <p class="font-bold mb-6">Make an Enquiry</p>
 
-      <iframe
-          title='myFrame'
+        <iframe
+         title='myFrame'
           name="hidden_iframe"
           id="hidden_iframe"
-          style={{display: "none"}}
-          onLoad={()=>{if(submitted) {window.location="https://osayandeblessing.vercel.app/"}}}
+        style={{ display: "none" }}
+        onLoad={() => {
+          if (submitted) {
+            window.location = "/";
+          }
+        }}
       />
+
       <form 
       action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfyxre825ENMoSO4ac3K1tFLZKRG1WtfWvHebZPR1f9_izAWQ/formResponse"
       method='post'
       target="hidden_iframe"
+        onSubmit={() => setSubmitted(true)}
       >
+     
         <div class="form-group mb-6">
           <input type="text" class="form-control block
             w-full
