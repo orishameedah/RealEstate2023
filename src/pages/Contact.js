@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-const [submitted, setSubmitted] = useState(false);
-
 const Contact = () => {
+
+  const [submitted, setSubmitted] = useState(false);
   return(
 <div class="container my-5 px-6 mx-auto">
 <section class=" text-gray-800">
